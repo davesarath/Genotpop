@@ -17,6 +17,10 @@
         "importHelpers": true,
         "target": "ES2022",
         "module": "ES2022",
+        "baseUrl": ".",  // This is important, it sets the root folder for your paths
+        "paths": {
+          "@global/helper": ["src/app/pages/helper/index.ts"]  // Adjust this based on your folder structure
+        }
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,

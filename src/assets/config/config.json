@@ -1,0 +1,6 @@
+{
+    "apiBaseUrl": "https://node-api-malm.onrender.com/api",
+    "loginEndpoint": "/login",
+    "userDetailsEndpoint": "/user/details"
+  }
+  

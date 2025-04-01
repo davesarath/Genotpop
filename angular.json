@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "sakai-ng": {
+        "new-project": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/sakai-ng",
+                        "outputPath": "dist/new-project",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": [
@@ -29,7 +29,9 @@
                             {
                                 "glob": "**/*",
                                 "input": "public"
-                            }
+                            },
+                            "src/favicon.ico",
+                            "src/assets"
                         ],
                         "styles": [
                             "src/styles.scss"
@@ -64,10 +66,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "sakai-ng:build:production"
+                            "buildTarget": "new-project:build:production"
                         },
                         "development": {
-                            "buildTarget": "sakai-ng:build:development"
+                            "buildTarget": "new-project:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -88,7 +90,9 @@
                             {
                                 "glob": "**/*",
                                 "input": "public"
-                            }
+                            },
+                            "src/favicon.ico",
+                            "src/assets"
                         ],
                         "styles": [
                             "src/styles.scss"

@@ -1,0 +1,10 @@
+
+.control-container{
+    margin-bottom: 10px;
+    .error{
+        color: var(--p-inputtext-invalid-border-color);
+    }
+    .control.ng-error, p-password.control.ng-error input{
+        border-color: var(--p-inputtext-invalid-border-color);
+    }
+}
